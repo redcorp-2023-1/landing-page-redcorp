@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+.container__menu {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 160px;
+  height: 75px;
+  margin-top: -15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-left: 55px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #22242e;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 25px;
+}
+
+nav ul li a:hover {
+  position: static;
+  border: 0px solid #6a5dc4;
+  color: white;
+  text-decoration: none;
+  background: #c9725b;
+}
+
+.menu nav img {
+  display: none;
+}
+
+.menu #btn_menu {
+  display: none;
+}
+
+/*Banner*/
+
+#banner {
+  padding: 0 20px;
+  background-image: url('../jpg/fondoContacto.jpg');
+  height: 60vh;
+  background-size: cover;
+  background-position: top;
+}
+
+.contenido-banner {
+  position: relative;
+  color: #fff;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.contenido-banner h1 {
+  font-size: 42px;
+
+  font-weight: 400;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.contenido-banner p {
+  font-size: 19px;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 10px 0px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.contenido-banner h3 span {
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.texto {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 30px;
+}
+
+#contenedor_formulario {
+  width: 490px;
+  margin: 500px;
+  padding: 10px 20px;
+  height: 200px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.Formu .form .form1 .tituloForm {
+  font-family: 'Roboto Slab';
+  font-size: 28px;
+  line-height: 100px;
+  width: 450px;
+  text-align: center;
+}
+
+.Formu .form .labelForm {
+  line-height: 40px;
+  font-family: 'Roboto Slab';
+  font-size: 22px;
+  width: 200px;
+}
+
+.Formu .form .form-input {
+  font-family: 'Roboto Slab';
+  font-size: 18px;
+  width: 450px;
+  padding: 20px;
+  border-radius: 100px;
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+}
+
+#mensaje1 {
+  display: block;
+  font-family: 'Roboto Slab';
+  font-size: 18px;
+  position: relative;
+  width: 450px;
+  height: 200px;
+  border: none;
+  border-radius: 50px;
+  padding: 25px;
+  background-color: #d9d9d9;
+  resize: none;
+}
+
+#contenedor_formulario .bot {
+  margin: auto;
+  padding: 20px 150px;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#contenedor_formulario .bot input {
+  text-decoration: none;
+  color: white;
+  width: 170px;
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  text-align: center;
+  background-color: #c9725b;
+  border-radius: 100px;
+  padding: 16px 40px;
+  border: none;
+}
+
+#contenedor_formulario .bot input:hover {
+  background-color: #22242e;
+  color: white;
+  border: 2px solid #22242e;
+  cursor: pointer;
+}
+
+.columIcon {
+  max-width: 900px;
+  width: 300px;
+  margin: 1250px;
+  margin-top: -500px;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+  font-family: 'Roboto Condensed';
+  font-size: 17px;
+}
+
+.columIcon .row2 label {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #7da4ca;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 15px;
+  }
+
+  #contenedor_formulario {
+    width: 400px;
+    margin: auto;
+  }
+
+  #contenedor_formulario .Formu .form .form-input {
+    width: 350px;
+  }
+
+  #mensaje1 {
+    width: 350px;
+  }
+  .Formu .form .form1 .tituloForm {
+    font-family: 'Roboto Slab';
+    font-size: 27px;
+    line-height: 100px;
+    width: 370px;
+    text-align: center;
+  }
+
+  #contenedor_formulario .bot {
+    padding: 20px 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tabla {
+    width: 45%;
+    max-width: none;
+    margin-bottom: 40px;
+    flex-grow: initial;
+    margin-top: 150px;
+  }
+
+  footer {
+    margin-top: 600px;
+  }
+
+  .texto2 {
+    margin-top: 100px;
+  }
+
+  .contenido-banner p {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #pregunta {
+    margin-top: 500px;
+  }
+
+  #contenedor_formulario {
+    width: 400px;
+    margin: auto;
+  }
+
+  .columIcon {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tabla {
+    width: 45%;
+    padding: 30px;
+  }
+  .tabla > h2 {
+    margin-top: 40px;
+  }
+
+  footer {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tabla {
+    width: 85%;
+    padding: 20px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+footer {
+  width: 100%;
+  background: #22242e;
+  color: #22242e;
+  margin-top: -500px;
+}
+
+.container-footer-all {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #22242e;
+}
+
+.container-body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  background-color: #22242e;
+}
+
+.colum1 {
+  max-width: 400px;
+  color: white;
+}
+
+.colum1 h1 {
+  font-family: 'Roboto Slab';
+  color: white;
+  font-size: 20px;
+}
+
+.colum1 p {
+  font-family: 'Roboto Condensed';
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.colum2 {
+  max-width: 400px;
+}
+
+.colum2 h1 {
+  font-family: 'Roboto Slab';
+  color: white;
+  font-size: 20px;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  font-family: 'Roboto Condensed';
+  color: white;
+  font-size: 17px;
+}
+
+.Inicio {
+  color: white;
+  text-decoration: none;
+}
+.Inicio:hover {
+  color: #c9725b;
+  text-decoration: none;
+}
+
+.Blog {
+  color: white;
+  text-decoration: none;
+}
+
+.Blog:hover {
+  color: #c9725b;
+  text-decoration: none;
+}
+.Conócenos {
+  color: white;
+  text-decoration: none;
+}
+
+.Conócenos:hover {
+  color: #c9725b;
+  text-decoration: none;
+}
+.Servicios {
+  color: white;
+  text-decoration: none;
+}
+.Servicios:hover {
+  color: #c9725b;
+  text-decoration: none;
+}
+
+.row img {
+  width: 36px;
+  height: 36px;
+}
+
+.row label {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: white;
+}
+
+.colum3 {
+  max-width: 400px;
+}
+
+.colum3 h1 {
+  font-family: 'Roboto Slab';
+  color: white;
+  font-size: 20px;
+}
+
+.row2 {
+  text-decoration: none;
+  margin-top: 15px;
+  display: flex;
+  font-family: 'Roboto Condensed';
+  color: white;
+  font-size: 17px;
+}
+
+.row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.row2 label {
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+
+form {
+  width: 230px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px 10px;
+  width: 265px;
+}
+
+button {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  text-align: center;
+  background-color: #c9725b;
+  border-radius: 100px;
+  border: none;
+  padding: 15px 15px;
+  margin-top: 55px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #22242e;
+  color: white;
+  border: 2px solid #22242e;
+  cursor: pointer;
+  border: solid white;
+}
+
+.container-footer {
+  width: 100%;
+  background-color: #22242e;
+  font-family: 'Roboto Slab';
+  color: white;
+  font-size: 16px;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #22242e;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.information a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+@keyframes move-vector {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .container__cover {
+    background-position: 50%;
+    background-image: url(images/fondo2.jpg);
+  }
+
+  #contenedor_formulario {
+    width: 400px;
+    margin: auto;
+  }
+
+  #contenedor_formulario {
+    height: 1000px;
+  }
+
+  .columIcon {
+    margin: auto;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .menu nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    z-index: 1;
+    transition: all 300ms;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .menu ul li {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .menu ul li a {
+    color: #bebebe;
+  }
+
+  #selected {
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #f6615d;
+  }
+
+  .menu nav img {
+    display: block;
+    width: 60px;
+  }
+
+  #back_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  .menu #btn_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+
+  .menu #btn_menu:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container__cover {
+    background-image: url(images/fondo2.jpg);
+  }
+
+  header {
+    padding: 40px;
+  }
+
+  .container__cover {
+    background-position: 0px;
+  }
+
+  .container__cover .svg img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container__cover {
+    background-image: url(images/fondo2.jpg);
+  }
+
+  .container__cover .svg img {
+    display: none;
+  }
+
+  .container__cover .text {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container-body {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  footer {
+    margin-top: 150px;
+  }
+
+  .colum3 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .colum2 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  .contenido-banner h1 {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  .contenido-banner p {
+    font-size: 15px;
+  }
+
+  .colum3 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .colum2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .colum2 {
+    margin-top: 30px;
+  }
+
+  .colum3 {
+    margin-top: 30px;
+  }
+}
